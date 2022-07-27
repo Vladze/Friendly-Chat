@@ -1,6 +1,8 @@
 $base-color: #3947f4;
 $white-color: #fff;
 $black-color: #000;
+$white-gray: #ededed;
+$gray-color: #f7f7f7;
 
 * {
   margin: 0;
@@ -19,7 +21,7 @@ body {
   width: 100%;
 }
 
-.loginPage {
+.login {
   display: flex;
 }
 
@@ -79,4 +81,21 @@ body {
       display: none;
     }
   }
+}
+
+.chat {
+  display: flex;
+}
+
+.aside {
+  flex: 0 0 550px;
+  background-color: #fff;
+  height: 100%;
+  resize: horizontal;
+}
+
+.main {
+  flex: 1 1 auto;
+  background-color: $white-gray;
+  border-left: 1px solid #ededed;
 }

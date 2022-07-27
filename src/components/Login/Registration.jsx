@@ -1,6 +1,6 @@
 import styles from "./Login.module.scss";
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
@@ -8,7 +8,6 @@ import { signIn } from "../../redux/slices/authSlice";
 import axios from "axios";
 
 const Registration = () => {
-  const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isAuth = useSelector((state) => state.isAuth.value);

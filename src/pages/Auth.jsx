@@ -5,7 +5,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 const Auth = () => {
   return (
     <>
-      <div className="page loginPage">
+      <div className="page login">
         <div className="side_left">
           <div className="login-or-registr">
             <Routes>

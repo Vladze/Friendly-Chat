@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useEffect } from "react";
 
 const authorized = localStorage.getItem("token") ? true : false;
 
@@ -11,10 +10,10 @@ export const isAuthSlice = createSlice({
   name: "isAuth",
   initialState,
   reducers: {
-    signIn: (state, action) => {
+    signIn: (state) => {
       state.value = true;
     },
-    signOut: (state, action) => {
+    signOut: (state) => {
       state.value = false;
     },
   },
