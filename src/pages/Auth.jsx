@@ -1,16 +1,17 @@
 import Login from "../components/Login/Login";
 import Registration from "../components/Login/Registration";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 
 const Auth = () => {
   return (
     <>
-      <div className="loginPage">
+      <div className="page loginPage">
         <div className="side_left">
           <div className="login-or-registr">
             <Routes>
-              <Route exact path="/login" element={<Login />} />
-              <Route path="/registration" element={<Registration />} />
+              <Route path="login" element={<Login />} />
+              <Route path="registration" element={<Registration />} />
+              <Route path="" element={<Navigate replace to="login" />} />
             </Routes>
           </div>
         </div>

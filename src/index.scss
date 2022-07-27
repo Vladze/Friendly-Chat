@@ -14,10 +14,20 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.loginPage {
-  display: flex;
+.page {
   height: 100vh;
   width: 100%;
+}
+
+.loginPage {
+  display: flex;
+}
+
+.notFoundPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $base-color;
 }
 
 .side {
